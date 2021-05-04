@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:business-card-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -15,32 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_ST_STM8:STM8S003F3U U1
-U 1 1 5DC749E4
-P 5000 3550
-F 0 "U1" H 4650 4500 50  0000 C CNN
-F 1 "STM8S003F3U" H 5150 3100 50  0000 C CNN
-F 2 "Package_DFN_QFN:ST_UFQFPN-20_3x3mm_P0.5mm" H 5050 4650 50  0001 L CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00024550.pdf" H 4950 3150 50  0001 C CNN
-	1    5000 3550
-	1    0    0    -1  
-$EndComp
-Text HLabel 4350 3250 0    50   Input ~ 0
-SCL
-Text HLabel 4350 3350 0    50   Input ~ 0
-SDA
-$Comp
-L kionix:KX003-1077 U2
-U 1 1 5DC78D2F
-P 7900 1650
-F 0 "U2" H 7900 2125 50  0000 C CNN
-F 1 "KX003-1077" H 7900 2034 50  0000 C CNN
-F 2 "Package_LGA:LGA-12_2x2mm_P0.5mm" H 6850 2600 50  0001 C CNN
-F 3 "" H 6750 2650 50  0001 C CNN
-	1    7900 1650
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Battery_Cell BT1
 U 1 1 5DC84BFF
 P 1550 2350
@@ -51,164 +24,40 @@ F 3 "~" V 1550 2410 50  0001 C CNN
 	1    1550 2350
 	1    0    0    -1  
 $EndComp
-Text HLabel 1550 1450 1    50   Input ~ 0
-VDD
 Text HLabel 1550 2500 3    50   Input ~ 0
-GND
-Text HLabel 5000 2500 1    50   Input ~ 0
-VDD
-Text HLabel 5000 4600 3    50   Input ~ 0
 GND
 $Comp
 L Device:C C1
 U 1 1 5DC86BF6
-P 4300 4450
-F 0 "C1" H 4415 4496 50  0000 L CNN
-F 1 "0.1 uF" H 4415 4405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4338 4300 50  0001 C CNN
-F 3 "~" H 4300 4450 50  0001 C CNN
-	1    4300 4450
-	1    0    0    -1  
-$EndComp
-Text HLabel 4300 4650 3    50   Input ~ 0
-GND
-Wire Wire Line
-	8350 1700 8300 1700
-Wire Wire Line
-	8300 1600 8350 1600
-Wire Wire Line
-	8350 1600 8350 1700
-Wire Wire Line
-	8400 1600 8350 1600
-Connection ~ 8350 1600
-Text HLabel 8400 1600 2    50   Input ~ 0
-VDD
-Text HLabel 8350 1800 2    50   Input ~ 0
-GND
-Text HLabel 7450 1900 0    50   Input ~ 0
-GND
-Text HLabel 7450 1700 0    50   Input ~ 0
-SDA
-Text HLabel 7450 1400 0    50   Input ~ 0
-SCL
-$Comp
-L Device:R R1
-U 1 1 5DC886AF
-P 3000 4150
-F 0 "R1" V 2800 4150 50  0000 C CNN
-F 1 "10 K" V 2884 4150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2930 4150 50  0001 C CNN
-F 3 "~" H 3000 4150 50  0001 C CNN
-	1    3000 4150
+P 3850 2750
+F 0 "C1" V 3598 2750 50  0000 C CNN
+F 1 "1 uF" V 3689 2750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3888 2600 50  0001 C CNN
+F 3 "~" H 3850 2750 50  0001 C CNN
+	1    3850 2750
 	0    1    1    0   
 $EndComp
-Text HLabel 2800 4150 0    50   Input ~ 0
-VDD
-Text HLabel 3200 4150 2    50   Input ~ 0
-NRESET
-Text HLabel 4350 4150 0    50   Input ~ 0
-NRESET
-$Comp
-L Connector_Generic:Conn_01x04 J1
-U 1 1 5DC8CC4A
-P 1600 3700
-F 0 "J1" H 1518 4017 50  0000 C CNN
-F 1 "Conn_01x04" H 1518 3926 50  0000 C CNN
-F 2 "" H 1600 3700 50  0001 C CNN
-F 3 "~" H 1600 3700 50  0001 C CNN
-	1    1600 3700
-	-1   0    0    -1  
-$EndComp
-Text HLabel 1850 3600 2    50   Input ~ 0
-VDD
-Text HLabel 1850 3700 2    50   Input ~ 0
-SWIM
-Text HLabel 5650 3250 2    50   Input ~ 0
-SWIM
-Text HLabel 1850 3800 2    50   Input ~ 0
-NRESET
-Text HLabel 1850 3900 2    50   Input ~ 0
-GND
-$Comp
-L Device:C C3
-U 1 1 5DC8FA3A
-P 8850 1850
-F 0 "C3" H 8965 1896 50  0000 L CNN
-F 1 "0.1 uF" H 8965 1805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 8888 1700 50  0001 C CNN
-F 3 "~" H 8850 1850 50  0001 C CNN
-	1    8850 1850
-	1    0    0    -1  
-$EndComp
-Text HLabel 8850 1650 1    50   Input ~ 0
-VDD
-Text HLabel 8850 2050 3    50   Input ~ 0
+Text HLabel 3650 2750 0    50   Input ~ 0
 GND
 $Comp
 L Device:C C2
 U 1 1 5DC90E07
-P 5450 2050
-F 0 "C2" H 5565 2096 50  0000 L CNN
-F 1 "0.1 uF" H 5565 2005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5488 1900 50  0001 C CNN
-F 3 "~" H 5450 2050 50  0001 C CNN
-	1    5450 2050
-	1    0    0    -1  
+P 4450 2200
+F 0 "C2" V 4702 2200 50  0000 C CNN
+F 1 "0.1 uF" V 4611 2200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4488 2050 50  0001 C CNN
+F 3 "~" H 4450 2200 50  0001 C CNN
+	1    4450 2200
+	0    -1   -1   0   
 $EndComp
-Text HLabel 5450 2250 3    50   Input ~ 0
+Text HLabel 4650 2200 2    50   Input ~ 0
 GND
 Wire Wire Line
-	5450 1900 5450 1850
-Text HLabel 5450 1850 1    50   Input ~ 0
-VDD
+	4650 2200 4600 2200
 Wire Wire Line
-	5450 2250 5450 2200
-Wire Wire Line
-	5000 2500 5000 2550
-Wire Wire Line
-	4350 3250 4400 3250
-Wire Wire Line
-	4400 3350 4350 3350
-Wire Wire Line
-	5650 3250 5600 3250
-Wire Wire Line
-	5000 4600 5000 4550
-Wire Wire Line
-	4350 4150 4400 4150
-Wire Wire Line
-	4300 4300 4300 4250
-Wire Wire Line
-	4300 4250 4400 4250
-Wire Wire Line
-	4300 4650 4300 4600
-Wire Wire Line
-	3200 4150 3150 4150
-Wire Wire Line
-	2800 4150 2850 4150
+	3650 2750 3700 2750
 Wire Wire Line
 	1550 2500 1550 2450
-Wire Wire Line
-	1550 1450 1550 1500
-Wire Wire Line
-	1800 3600 1850 3600
-Wire Wire Line
-	1850 3700 1800 3700
-Wire Wire Line
-	1800 3800 1850 3800
-Wire Wire Line
-	1850 3900 1800 3900
-Wire Wire Line
-	7450 1400 7500 1400
-Wire Wire Line
-	7450 1700 7500 1700
-Wire Wire Line
-	7500 1900 7450 1900
-Wire Wire Line
-	8350 1800 8300 1800
-Wire Wire Line
-	8850 2050 8850 2000
-Wire Wire Line
-	8850 1700 8850 1650
 $Comp
 L Device:LED D1
 U 1 1 5DC8A5A5
@@ -253,114 +102,30 @@ F 3 "~" H 8250 3700 50  0001 C CNN
 	1    8250 3700
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:R R2
-U 1 1 5DC8F70A
-P 7050 3350
-F 0 "R2" V 6843 3350 50  0000 C CNN
-F 1 "600" V 6934 3350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6980 3350 50  0001 C CNN
-F 3 "~" H 7050 3350 50  0001 C CNN
-	1    7050 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R4
-U 1 1 5DCB1798
-P 7450 3350
-F 0 "R4" V 7243 3350 50  0000 C CNN
-F 1 "600" V 7334 3350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7380 3350 50  0001 C CNN
-F 3 "~" H 7450 3350 50  0001 C CNN
-	1    7450 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R8
-U 1 1 5DCB2535
-P 8250 3350
-F 0 "R8" V 8043 3350 50  0000 C CNN
-F 1 "600" V 8134 3350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 8180 3350 50  0001 C CNN
-F 3 "~" H 8250 3350 50  0001 C CNN
-	1    8250 3350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8250 3500 8250 3550
-Wire Wire Line
-	4400 3550 4350 3550
-Wire Wire Line
-	4400 3650 4350 3650
-Wire Wire Line
-	4400 3750 4350 3750
-Wire Wire Line
-	4400 3850 4350 3850
-Wire Wire Line
-	5650 3350 5600 3350
-Wire Wire Line
-	5600 3450 5650 3450
-Wire Wire Line
-	5600 3550 5650 3550
-Wire Wire Line
-	5600 3650 5650 3650
-Text HLabel 5650 3350 2    50   Input ~ 0
-COL0
-Text HLabel 5650 3450 2    50   Input ~ 0
-COL1
-Text HLabel 5650 3550 2    50   Input ~ 0
-COL2
-Text HLabel 5650 3650 2    50   Input ~ 0
-COL3
-Text HLabel 4350 3550 0    50   Input ~ 0
-ROW0
-Text HLabel 4350 3650 0    50   Input ~ 0
-ROW1
-Text HLabel 4350 3750 0    50   Input ~ 0
-ROW2
-Text HLabel 4350 3850 0    50   Input ~ 0
-ROW3
-$Comp
-L Device:R R6
-U 1 1 5DCB19F8
-P 7850 3350
-F 0 "R6" V 7643 3350 50  0000 C CNN
-F 1 "600" V 7734 3350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7780 3350 50  0001 C CNN
-F 3 "~" H 7850 3350 50  0001 C CNN
-	1    7850 3350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7050 3550 7050 3500
 Wire Wire Line
 	7450 3550 7450 3500
 Wire Wire Line
 	7850 3500 7850 3550
-Text HLabel 8250 3150 1    50   Input ~ 0
+Text HLabel 8250 3500 1    50   Input ~ 0
 COL3
-Wire Wire Line
-	8250 3150 8250 3200
 Wire Wire Line
 	8250 3950 8250 3850
 Text HLabel 8250 3950 3    50   Input ~ 0
 ROW0
-Wire Wire Line
-	7850 3150 7850 3200
-Text HLabel 7850 3150 1    50   Input ~ 0
+Text HLabel 7850 3500 1    50   Input ~ 0
 COL2
 Text HLabel 7850 3950 3    50   Input ~ 0
 ROW0
 Wire Wire Line
 	7850 3950 7850 3850
-Wire Wire Line
-	7450 3200 7450 3150
-Text HLabel 7450 3150 1    50   Input ~ 0
+Text HLabel 7450 3500 1    50   Input ~ 0
 COL1
-Text HLabel 7050 3150 1    50   Input ~ 0
+Text HLabel 7050 3500 1    50   Input ~ 0
 COL0
-Wire Wire Line
-	7050 3150 7050 3200
 Wire Wire Line
 	7450 3850 7450 3950
 Text HLabel 7450 3950 3    50   Input ~ 0
@@ -413,78 +178,26 @@ F 3 "~" H 8250 5350 50  0001 C CNN
 	1    8250 5350
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:R R3
-U 1 1 5DCD190F
-P 7050 5000
-F 0 "R3" V 6843 5000 50  0000 C CNN
-F 1 "600" V 6934 5000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6980 5000 50  0001 C CNN
-F 3 "~" H 7050 5000 50  0001 C CNN
-	1    7050 5000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R5
-U 1 1 5DCD1916
-P 7450 5000
-F 0 "R5" V 7243 5000 50  0000 C CNN
-F 1 "600" V 7334 5000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7380 5000 50  0001 C CNN
-F 3 "~" H 7450 5000 50  0001 C CNN
-	1    7450 5000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R9
-U 1 1 5DCD191D
-P 8250 5000
-F 0 "R9" V 8043 5000 50  0000 C CNN
-F 1 "600" V 8134 5000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 8180 5000 50  0001 C CNN
-F 3 "~" H 8250 5000 50  0001 C CNN
-	1    8250 5000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8250 5150 8250 5200
-$Comp
-L Device:R R7
-U 1 1 5DCD1925
-P 7850 5000
-F 0 "R7" V 7643 5000 50  0000 C CNN
-F 1 "600" V 7734 5000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7780 5000 50  0001 C CNN
-F 3 "~" H 7850 5000 50  0001 C CNN
-	1    7850 5000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7050 5200 7050 5150
 Wire Wire Line
 	7450 5200 7450 5150
 Wire Wire Line
 	7850 5150 7850 5200
-Text HLabel 8250 4800 1    50   Input ~ 0
+Text HLabel 8250 5150 1    50   Input ~ 0
 COL3
 Wire Wire Line
-	8250 4800 8250 4850
-Wire Wire Line
 	8250 5600 8250 5500
-Wire Wire Line
-	7850 4800 7850 4850
-Text HLabel 7850 4800 1    50   Input ~ 0
+Text HLabel 7850 5150 1    50   Input ~ 0
 COL2
 Wire Wire Line
 	7850 5600 7850 5500
-Wire Wire Line
-	7450 4850 7450 4800
-Text HLabel 7450 4800 1    50   Input ~ 0
+Text HLabel 7450 5150 1    50   Input ~ 0
 COL1
-Text HLabel 7050 4800 1    50   Input ~ 0
+Text HLabel 7050 5150 1    50   Input ~ 0
 COL0
-Wire Wire Line
-	7050 4800 7050 4850
 Wire Wire Line
 	7450 5500 7450 5600
 Wire Wire Line
@@ -533,78 +246,26 @@ F 3 "~" H 10100 3700 50  0001 C CNN
 	1    10100 3700
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:R R10
-U 1 1 5DCD3BDF
-P 8900 3350
-F 0 "R10" V 8693 3350 50  0000 C CNN
-F 1 "600" V 8784 3350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 8830 3350 50  0001 C CNN
-F 3 "~" H 8900 3350 50  0001 C CNN
-	1    8900 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R12
-U 1 1 5DCD3BE6
-P 9300 3350
-F 0 "R12" V 9093 3350 50  0000 C CNN
-F 1 "600" V 9184 3350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9230 3350 50  0001 C CNN
-F 3 "~" H 9300 3350 50  0001 C CNN
-	1    9300 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R16
-U 1 1 5DCD3BED
-P 10100 3350
-F 0 "R16" V 9893 3350 50  0000 C CNN
-F 1 "600" V 9984 3350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 10030 3350 50  0001 C CNN
-F 3 "~" H 10100 3350 50  0001 C CNN
-	1    10100 3350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10100 3500 10100 3550
-$Comp
-L Device:R R14
-U 1 1 5DCD3BF5
-P 9700 3350
-F 0 "R14" V 9493 3350 50  0000 C CNN
-F 1 "600" V 9584 3350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9630 3350 50  0001 C CNN
-F 3 "~" H 9700 3350 50  0001 C CNN
-	1    9700 3350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8900 3550 8900 3500
 Wire Wire Line
 	9300 3550 9300 3500
 Wire Wire Line
 	9700 3500 9700 3550
-Text HLabel 10100 3150 1    50   Input ~ 0
+Text HLabel 10100 3500 1    50   Input ~ 0
 COL3
 Wire Wire Line
-	10100 3150 10100 3200
-Wire Wire Line
 	10100 3950 10100 3850
-Wire Wire Line
-	9700 3150 9700 3200
-Text HLabel 9700 3150 1    50   Input ~ 0
+Text HLabel 9700 3500 1    50   Input ~ 0
 COL2
 Wire Wire Line
 	9700 3950 9700 3850
-Wire Wire Line
-	9300 3200 9300 3150
-Text HLabel 9300 3150 1    50   Input ~ 0
+Text HLabel 9300 3500 1    50   Input ~ 0
 COL1
-Text HLabel 8900 3150 1    50   Input ~ 0
+Text HLabel 8900 3500 1    50   Input ~ 0
 COL0
-Wire Wire Line
-	8900 3150 8900 3200
 Wire Wire Line
 	9300 3850 9300 3950
 Wire Wire Line
@@ -655,78 +316,26 @@ F 3 "~" H 10100 5350 50  0001 C CNN
 	1    10100 5350
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:R R11
-U 1 1 5DCD5396
-P 8900 5000
-F 0 "R11" V 8693 5000 50  0000 C CNN
-F 1 "600" V 8784 5000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 8830 5000 50  0001 C CNN
-F 3 "~" H 8900 5000 50  0001 C CNN
-	1    8900 5000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R13
-U 1 1 5DCD539D
-P 9300 5000
-F 0 "R13" V 9093 5000 50  0000 C CNN
-F 1 "600" V 9184 5000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9230 5000 50  0001 C CNN
-F 3 "~" H 9300 5000 50  0001 C CNN
-	1    9300 5000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R17
-U 1 1 5DCD53A4
-P 10100 5000
-F 0 "R17" V 9893 5000 50  0000 C CNN
-F 1 "600" V 9984 5000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 10030 5000 50  0001 C CNN
-F 3 "~" H 10100 5000 50  0001 C CNN
-	1    10100 5000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10100 5150 10100 5200
-$Comp
-L Device:R R15
-U 1 1 5DCD53AC
-P 9700 5000
-F 0 "R15" V 9493 5000 50  0000 C CNN
-F 1 "600" V 9584 5000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9630 5000 50  0001 C CNN
-F 3 "~" H 9700 5000 50  0001 C CNN
-	1    9700 5000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8900 5200 8900 5150
 Wire Wire Line
 	9300 5200 9300 5150
 Wire Wire Line
 	9700 5150 9700 5200
-Text HLabel 10100 4800 1    50   Input ~ 0
+Text HLabel 10100 5150 1    50   Input ~ 0
 COL3
 Wire Wire Line
-	10100 4800 10100 4850
-Wire Wire Line
 	10100 5600 10100 5500
-Wire Wire Line
-	9700 4800 9700 4850
-Text HLabel 9700 4800 1    50   Input ~ 0
+Text HLabel 9700 5150 1    50   Input ~ 0
 COL2
 Wire Wire Line
 	9700 5600 9700 5500
-Wire Wire Line
-	9300 4850 9300 4800
-Text HLabel 9300 4800 1    50   Input ~ 0
+Text HLabel 9300 5150 1    50   Input ~ 0
 COL1
-Text HLabel 8900 4800 1    50   Input ~ 0
+Text HLabel 8900 5150 1    50   Input ~ 0
 COL0
-Wire Wire Line
-	8900 4800 8900 4850
 Wire Wire Line
 	9300 5500 9300 5600
 Wire Wire Line
@@ -753,35 +362,160 @@ Text HLabel 9700 5600 3    50   Input ~ 0
 ROW3
 Text HLabel 10100 5600 3    50   Input ~ 0
 ROW3
+Wire Wire Line
+	1550 2150 1550 2100
 $Comp
-L C_K:PTS_540 SW1
-U 1 1 5DCC7ADE
-P 1550 1800
-F 0 "SW1" V 1596 1706 50  0000 R CNN
-F 1 "PTS_540" V 1505 1706 50  0000 R CNN
-F 2 "C_K:PTS_540" H 1500 1800 50  0001 C CNN
-F 3 "" H 1500 1800 50  0001 C CNN
-	1    1550 1800
+L Switch:SW_SPST SW?
+U 1 1 609120E1
+P 1550 1900
+F 0 "SW?" V 1596 1812 50  0000 R CNN
+F 1 "SW_SPST" V 1505 1812 50  0000 R CNN
+F 2 "" H 1550 1900 50  0001 C CNN
+F 3 "~" H 1550 1900 50  0001 C CNN
+	1    1550 1900
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1550 1500 1500 1500
+	1550 1650 1550 1700
+Text HLabel 1550 1650 1    50   Input ~ 0
+VDD
+Text HLabel 4350 6700 3    50   Input ~ 0
+GND
 Wire Wire Line
-	1500 1500 1500 1550
+	4350 6700 4350 6650
+$Comp
+L Connector_Generic:Conn_01x10 J?
+U 1 1 60929001
+P 1050 4750
+F 0 "J?" H 968 5367 50  0000 C CNN
+F 1 "Conn_01x10" H 968 5276 50  0000 C CNN
+F 2 "" H 1050 4750 50  0001 C CNN
+F 3 "~" H 1050 4750 50  0001 C CNN
+	1    1050 4750
+	-1   0    0    -1  
+$EndComp
 Wire Wire Line
-	1550 1500 1600 1500
+	4000 2750 4050 2750
 Wire Wire Line
-	1600 1500 1600 1550
-Connection ~ 1550 1500
+	4050 2750 4050 2850
+$Comp
+L Device:C C?
+U 1 1 609316AC
+P 4850 2550
+F 0 "C?" V 5102 2550 50  0000 C CNN
+F 1 "0.1 uF" V 5011 2550 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4888 2400 50  0001 C CNN
+F 3 "~" H 4850 2550 50  0001 C CNN
+	1    4850 2550
+	0    -1   -1   0   
+$EndComp
+Text HLabel 5050 2550 2    50   Input ~ 0
+GND
 Wire Wire Line
-	1550 2150 1550 2100
+	4700 2550 4650 2550
 Wire Wire Line
-	1550 2100 1600 2100
+	5050 2550 5000 2550
+Text HLabel 4200 2200 0    50   Input ~ 0
+VDD
 Wire Wire Line
-	1600 2100 1600 2050
+	4600 2550 4650 2550
+Text HLabel 4600 2550 0    50   Input ~ 0
+VDD
 Wire Wire Line
-	1550 2100 1500 2100
+	4200 2200 4250 2200
 Wire Wire Line
-	1500 2100 1500 2050
-Connection ~ 1550 2100
+	4250 2200 4250 2850
+Connection ~ 4250 2200
+Wire Wire Line
+	4250 2200 4300 2200
+Wire Wire Line
+	4650 2850 4650 2550
+Connection ~ 4650 2550
+Text HLabel 1300 4350 2    50   Input ~ 0
+VDD
+Wire Wire Line
+	1300 4350 1250 4350
+Text HLabel 1300 4450 2    50   Input ~ 0
+SWDIO
+Text HLabel 1300 4550 2    50   Input ~ 0
+GND
+Text HLabel 1750 4650 2    50   Input ~ 0
+SWCLK
+Text HLabel 1300 4750 2    50   Input ~ 0
+GND
+Text HLabel 2350 5250 2    50   Input ~ 0
+nRESET
+Wire Wire Line
+	2350 5250 2300 5250
+Wire Wire Line
+	1250 4750 1300 4750
+Wire Wire Line
+	1250 4550 1300 4550
+Wire Wire Line
+	1300 4450 1250 4450
+Wire Wire Line
+	1250 4650 1700 4650
+$Comp
+L Device:R R?
+U 1 1 60946BA4
+P 1700 4450
+F 0 "R?" H 1770 4496 50  0000 L CNN
+F 1 "R" H 1770 4405 50  0000 L CNN
+F 2 "" V 1630 4450 50  0001 C CNN
+F 3 "~" H 1700 4450 50  0001 C CNN
+	1    1700 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 4600 1700 4650
+Connection ~ 1700 4650
+Wire Wire Line
+	1700 4650 1750 4650
+Wire Wire Line
+	1700 4300 1700 4250
+Text HLabel 1700 4250 1    50   Input ~ 0
+VDD
+$Comp
+L Device:R R?
+U 1 1 60949E52
+P 2300 5050
+F 0 "R?" H 2370 5096 50  0000 L CNN
+F 1 "R" H 2370 5005 50  0000 L CNN
+F 2 "" V 2230 5050 50  0001 C CNN
+F 3 "~" H 2300 5050 50  0001 C CNN
+	1    2300 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 4900 2300 4850
+Text HLabel 2300 4850 1    50   Input ~ 0
+VDD
+Wire Wire Line
+	2300 5200 2300 5250
+Connection ~ 2300 5250
+Wire Wire Line
+	1250 5250 2300 5250
+Text HLabel 3600 6450 0    50   Input ~ 0
+nRESET
+Wire Wire Line
+	3600 6450 3650 6450
+Text HLabel 3600 6150 0    50   Input ~ 0
+SWCLK
+Wire Wire Line
+	3650 6150 3600 6150
+Text HLabel 3600 6250 0    50   Input ~ 0
+SWDIO
+Wire Wire Line
+	3600 6250 3650 6250
+$Comp
+L MCU_Microchip_ATtiny:ATtiny1616-S U?
+U 1 1 60956219
+P 4250 4450
+F 0 "U?" H 4250 5531 50  0000 C CNN
+F 1 "ATtiny1616-S" H 4250 5440 50  0000 C CNN
+F 2 "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" H 4250 4450 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny3216_ATtiny1616-data-sheet-40001997B.pdf" H 4250 4450 50  0001 C CNN
+	1    4250 4450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
