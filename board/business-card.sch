@@ -383,17 +383,6 @@ Text HLabel 4350 6700 3    50   Input ~ 0
 GND
 Wire Wire Line
 	4350 6700 4350 6650
-$Comp
-L Connector_Generic:Conn_01x10 J?
-U 1 1 60929001
-P 1050 4750
-F 0 "J?" H 968 5367 50  0000 C CNN
-F 1 "Conn_01x10" H 968 5276 50  0000 C CNN
-F 2 "" H 1050 4750 50  0001 C CNN
-F 3 "~" H 1050 4750 50  0001 C CNN
-	1    1050 4750
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	4000 2750 4050 2750
 Wire Wire Line
@@ -431,70 +420,6 @@ Wire Wire Line
 Wire Wire Line
 	4650 2850 4650 2550
 Connection ~ 4650 2550
-Text HLabel 1300 4350 2    50   Input ~ 0
-VDD
-Wire Wire Line
-	1300 4350 1250 4350
-Text HLabel 1300 4450 2    50   Input ~ 0
-SWDIO
-Text HLabel 1300 4550 2    50   Input ~ 0
-GND
-Text HLabel 1750 4650 2    50   Input ~ 0
-SWCLK
-Text HLabel 1300 4750 2    50   Input ~ 0
-GND
-Text HLabel 2350 5250 2    50   Input ~ 0
-nRESET
-Wire Wire Line
-	2350 5250 2300 5250
-Wire Wire Line
-	1250 4750 1300 4750
-Wire Wire Line
-	1250 4550 1300 4550
-Wire Wire Line
-	1300 4450 1250 4450
-Wire Wire Line
-	1250 4650 1700 4650
-$Comp
-L Device:R R?
-U 1 1 60946BA4
-P 1700 4450
-F 0 "R?" H 1770 4496 50  0000 L CNN
-F 1 "R" H 1770 4405 50  0000 L CNN
-F 2 "" V 1630 4450 50  0001 C CNN
-F 3 "~" H 1700 4450 50  0001 C CNN
-	1    1700 4450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1700 4600 1700 4650
-Connection ~ 1700 4650
-Wire Wire Line
-	1700 4650 1750 4650
-Wire Wire Line
-	1700 4300 1700 4250
-Text HLabel 1700 4250 1    50   Input ~ 0
-VDD
-$Comp
-L Device:R R?
-U 1 1 60949E52
-P 2300 5050
-F 0 "R?" H 2370 5096 50  0000 L CNN
-F 1 "R" H 2370 5005 50  0000 L CNN
-F 2 "" V 2230 5050 50  0001 C CNN
-F 3 "~" H 2300 5050 50  0001 C CNN
-	1    2300 5050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2300 4900 2300 4850
-Text HLabel 2300 4850 1    50   Input ~ 0
-VDD
-Wire Wire Line
-	2300 5200 2300 5250
-Connection ~ 2300 5250
-Wire Wire Line
-	1250 5250 2300 5250
 Text HLabel 3600 6450 0    50   Input ~ 0
 nRESET
 Wire Wire Line
@@ -518,4 +443,31 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny3216_ATtiny1616-data-
 	1    4250 4450
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J?
+U 1 1 6092ADDC
+P 1200 4750
+F 0 "J?" H 1118 5167 50  0000 C CNN
+F 1 "Conn_01x06" H 1118 5076 50  0000 C CNN
+F 2 "" H 1200 4750 50  0001 C CNN
+F 3 "~" H 1200 4750 50  0001 C CNN
+	1    1200 4750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 4650 1400 4650
+Text HLabel 1450 4650 2    50   Input ~ 0
+UPDI_DATA
+Text HLabel 1450 4550 2    50   Input ~ 0
+VDD
+Wire Wire Line
+	1450 4550 1400 4550
+Wire Wire Line
+	1450 5050 1400 5050
+Text HLabel 1450 5050 2    50   Input ~ 0
+GND
+Wire Wire Line
+	4900 3750 4850 3750
+Text HLabel 4900 3750 2    50   Input ~ 0
+UPDI_DATA
 $EndSCHEMATC
