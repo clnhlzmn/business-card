@@ -409,8 +409,9 @@ U 1 1 6092ADDC
 P 1200 4750
 F 0 "J1" H 1118 5167 50  0000 C CNN
 F 1 "Conn_01x06" H 1118 5076 50  0000 C CNN
-F 2 "" H 1200 4750 50  0001 C CNN
+F 2 "colinholzman:Molex_788641001_mating_pad_layout" H 1200 4750 50  0001 C CNN
 F 3 "~" H 1200 4750 50  0001 C CNN
+F 4 "yes" H 1200 4750 50  0001 C CNN "exclude"
 	1    1200 4750
 	-1   0    0    -1  
 $EndComp
