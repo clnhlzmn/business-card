@@ -398,7 +398,7 @@ U 1 1 60956219
 P 4250 4450
 F 0 "U1" H 3800 5300 50  0000 C CNN
 F 1 "ATtiny1616-S" H 4650 5300 50  0000 C CNN
-F 2 "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" H 4250 4450 50  0001 C CIN
+F 2 "colinholzman:SOIC-20W_7.5x12.8mm_P1.27mm_through_board_mount" H 4250 4450 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny3216_ATtiny1616-data-sheet-40001997B.pdf" H 4250 4450 50  0001 C CNN
 	1    4250 4450
 	1    0    0    -1  
@@ -667,7 +667,7 @@ Wire Wire Line
 Wire Wire Line
 	5100 4850 5150 4850
 Wire Wire Line
-	2850 1000 2900 1000
+	2850 950  2900 950 
 Wire Wire Line
 	2250 1300 2300 1300
 Wire Wire Line
@@ -677,8 +677,8 @@ Wire Wire Line
 Wire Wire Line
 	4550 1400 4600 1400
 Wire Wire Line
-	4050 1950 4100 1950
-Text HLabel 2850 1000 0    50   Input ~ 0
+	4300 1800 4350 1800
+Text HLabel 2850 950  0    50   Input ~ 0
 X0
 Text HLabel 2250 1300 0    50   Input ~ 0
 X1
@@ -688,17 +688,17 @@ Text HLabel 3450 1300 0    50   Input ~ 0
 X0
 Text HLabel 4550 1400 0    50   Input ~ 0
 X1
-Text HLabel 4050 1950 0    50   Input ~ 0
+Text HLabel 4300 1800 0    50   Input ~ 0
 X2
 Wire Wire Line
-	3350 1000 3300 1000
+	3350 950  3300 950 
 Wire Wire Line
 	3950 1300 3900 1300
 Wire Wire Line
 	2750 1300 2700 1300
 Wire Wire Line
 	5050 1400 5000 1400
-Text HLabel 3350 1000 2    50   Input ~ 0
+Text HLabel 3350 950  2    50   Input ~ 0
 Y0
 Text HLabel 3950 1300 2    50   Input ~ 0
 Y0
@@ -710,10 +710,10 @@ Wire Wire Line
 	3350 1700 3300 1700
 Text HLabel 3350 1700 2    50   Input ~ 0
 Y1
-Text HLabel 4550 1950 2    50   Input ~ 0
+Text HLabel 4800 1800 2    50   Input ~ 0
 Y1
 Wire Wire Line
-	4500 1950 4550 1950
+	4750 1800 4800 1800
 $Comp
 L colinholzman:Mutual_Capacitance_Button SW2
 U 1 1 60944301
@@ -739,12 +739,12 @@ $EndComp
 $Comp
 L colinholzman:Mutual_Capacitance_Button SW3
 U 1 1 6094A060
-P 3100 1000
-F 0 "SW3" H 3100 1173 50  0000 C CNN
-F 1 "Mutual_Capacitance_Button" H 3100 1174 50  0001 C CNN
-F 2 "colinholzman:Mutual_Capacitance_Button" H 3100 1000 50  0001 C CNN
-F 3 "" H 3100 1000 50  0001 C CNN
-	1    3100 1000
+P 3100 950
+F 0 "SW3" H 3100 1123 50  0000 C CNN
+F 1 "Mutual_Capacitance_Button" H 3100 1124 50  0001 C CNN
+F 2 "colinholzman:Mutual_Capacitance_Button" H 3100 950 50  0001 C CNN
+F 3 "" H 3100 950 50  0001 C CNN
+	1    3100 950 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -772,12 +772,12 @@ $EndComp
 $Comp
 L colinholzman:Mutual_Capacitance_Button SW6
 U 1 1 6095053F
-P 4300 1950
-F 0 "SW6" H 4300 2123 50  0000 C CNN
-F 1 "Mutual_Capacitance_Button" H 4300 2124 50  0001 C CNN
-F 2 "colinholzman:Mutual_Capacitance_Button" H 4300 1950 50  0001 C CNN
-F 3 "" H 4300 1950 50  0001 C CNN
-	1    4300 1950
+P 4550 1800
+F 0 "SW6" H 4550 1973 50  0000 C CNN
+F 1 "Mutual_Capacitance_Button" H 4550 1974 50  0001 C CNN
+F 2 "colinholzman:Mutual_Capacitance_Button" H 4550 1800 50  0001 C CNN
+F 3 "" H 4550 1800 50  0001 C CNN
+	1    4550 1800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -786,7 +786,7 @@ U 1 1 6095BE2B
 P 1200 1850
 F 0 "SW1" V 1246 1662 50  0000 R CNN
 F 1 "SW_SPDT" V 1155 1662 50  0000 R CNN
-F 2 "colinholzman:JSX08001SAQNL-through-board-mount" H 1200 1850 50  0001 C CNN
+F 2 "colinholzman:JSX08001SAQNL_through_board_mount" H 1200 1850 50  0001 C CNN
 F 3 "~" H 1200 1850 50  0001 C CNN
 F 4 "C&K" H 1200 1850 50  0001 C CNN "mfg1"
 F 5 "JSX08001SAQNL" H 1200 1850 50  0001 C CNN "mfg1pn"
