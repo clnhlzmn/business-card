@@ -19,7 +19,7 @@ U 1 1 5DC84BFF
 P 1200 2300
 F 0 "BT1" H 1318 2396 50  0000 L CNN
 F 1 "Battery_Cell" H 1318 2305 50  0000 L CNN
-F 2 "renata:CR1216_MFR_SM" V 1200 2360 50  0001 C CNN
+F 2 "business-card:CR2016_MFR_SM_through_board_mount" V 1200 2360 50  0001 C CNN
 F 3 "~" V 1200 2360 50  0001 C CNN
 	1    1200 2300
 	1    0    0    -1  
@@ -398,7 +398,7 @@ U 1 1 60956219
 P 4250 4450
 F 0 "U1" H 3800 5300 50  0000 C CNN
 F 1 "ATtiny1616-S" H 4650 5300 50  0000 C CNN
-F 2 "colinholzman:SOIC-20W_7.5x12.8mm_P1.27mm_through_board_mount" H 4250 4450 50  0001 C CIN
+F 2 "business-card:SOIC-20W_7.5x12.8mm_P1.27mm_through_board_mount" H 4250 4450 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny3216_ATtiny1616-data-sheet-40001997B.pdf" H 4250 4450 50  0001 C CNN
 	1    4250 4450
 	1    0    0    -1  
@@ -786,7 +786,7 @@ U 1 1 6095BE2B
 P 1200 1850
 F 0 "SW1" V 1246 1662 50  0000 R CNN
 F 1 "SW_SPDT" V 1155 1662 50  0000 R CNN
-F 2 "colinholzman:JSX08001SAQNL_through_board_mount" H 1200 1850 50  0001 C CNN
+F 2 "business-card:JSX08001SAQNL_through_board_mount" H 1200 1850 50  0001 C CNN
 F 3 "~" H 1200 1850 50  0001 C CNN
 F 4 "C&K" H 1200 1850 50  0001 C CNN "mfg1"
 F 5 "JSX08001SAQNL" H 1200 1850 50  0001 C CNN "mfg1pn"
