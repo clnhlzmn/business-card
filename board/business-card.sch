@@ -34,7 +34,7 @@ U 1 1 5DC90E07
 P 4450 3400
 F 0 "C2" V 4702 3400 50  0000 C CNN
 F 1 "0.1 uF" V 4611 3400 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4488 3250 50  0001 C CNN
+F 2 "business-card:0603_through_board_mount" H 4488 3250 50  0001 C CNN
 F 3 "~" H 4450 3400 50  0001 C CNN
 	1    4450 3400
 	0    -1   -1   0   
